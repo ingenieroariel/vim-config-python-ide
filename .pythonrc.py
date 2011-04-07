@@ -133,8 +133,7 @@ def SECRET_KEY():
 if 'DJANGO_SETTINGS_MODULE' in os.environ:
     from django.db.models.loading import get_models
     from django.test.client import Client
-    from django.test.utils import setup_test_environment,
-teardown_test_environment
+    from django.test.utils import setup_test_environment, teardown_test_environment
     from django.conf import settings as S
 
     class DjangoModels(object):
